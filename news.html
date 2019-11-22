@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>News</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/3b666215d3.js" crossorigin="anonymous"></script>
+  <script src="news.js"></script>
+</head>
+<body class="bg-dark" onload="getNews()">
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <!--Name and logo of my brand-->
+            <a class="navbar-brand"> <img src="images/logo.png" width="40px" height="40px">
+              <span class="navbar-text"><b>Rishab's App </b></span> </a>
+     
+        <!--List of items in navbar-->
+        <ul class="navbar-nav">
+         
+          <li class="navbar-item">
+              <a class="nav-link" href="index.html">Home</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a class="nav-link" href="search.html">News Area</a>
+          </li>
+
+          <li class="navbar-item">
+            <a class="nav-link" href="weather/weather.html">Weather</a>
+          </li>
+
+          <li class="navbar-item">
+            <a class="nav-link" href="currency.html">Currency</a>
+          </li>
+
+          <li class="navbar-item">
+            <a class="nav-link" href="dictionary.html">Dictionary</a>
+          </li>
+  
+        </ul>
+        </div>
+      </nav>
+<div class="justify-content-center d-flex"><img class="p-5" id="loading" src="public/4.gif"></div>
+    <div class="container mt-5">
+        <div id="news" class="row"></div>
+    </div>

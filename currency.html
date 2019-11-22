@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather</title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> </script>
+		<script src="app.js"></script>
+
+    </head>
+
+
+    <body>
+        <!--navbar using bootstrap -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+          <div class="container-fluid">
+            <!--Name and logo of my brand-->
+              <a class="navbar-brand"> <img src="images/logo.png" width="40px" height="40px">
+                <span class="navbar-text"><b>Rishab's App </b></span> </a>
+       
+          <!--List of items in navbar-->
+          <ul class="navbar-nav">
+           
+            <li class="navbar-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            
+            <li class="navbar-item">
+              <a class="nav-link" href="news.html">News Area</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a class="nav-link" href="weather/weather.html">Weather</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a class="nav-link" href="currency.html">Currency</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a class="nav-link" href="dictionary.html">Dictionary</a>
+            </li>
+    
+          </ul>
+          </div>
+        </nav>
+
+
+
+        div id="wrapper"> 
+
+	<div class="jumbotron custom">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-10 col-sm-offset-1  col-md-8 col-md-offset-2">
+					
+					<div class="project">
+						<h2>Currency Converter</h2>
+						<div id="content"></div>
+						<div class="row">
+							<div class="col-xs-12">
+								<label>Select currency: </label>
+								<select id="convertFrom" class="form-control">
+									<option value="AUD">AUD</option>
+									<option value="BGN">BGN</option>
+									<option value="CAD">CAD</option>
+									<option value="CNY">CNY</option>
+									<option value="EUR" selected="">EUR</option>
+									<option value="GBP">GBP</option>
+									<option value="JPY">JPY</option>
+									<option value="RUB">RUB</option>
+									<option value="USD">USD</option>
+								</select>
+							</div>	
+						</div>			
+
+						<div class="form-group" id="input">
+							<label>Amount: </label>
+							<input id="fromVal" type="text" class="form-control" placeholder="Enter amount...">
+						</div>
+
+						<!---
+						<label>Amount</label>
+						<input id="fromVal" type="text"></input> ---->
+
+						<div class="row">
+							<div class="col-xs-12">
+								<label>Select currency: </label>
+								<select id="convertTo" class="form-control">
+									<option value="AUD">AUD</option>
+									<option value="BGN">BGN</option>
+									<option value="CAD">CAD</option>
+									<option value="CNY">CNY</option>
+									<option value="EUR">EUR</option>
+									<option value="GBP">GBP</option>
+									<option value="JPY">JPY</option>
+									<option value="RUB">RUB</option>
+									<option value="USD" selected="">USD</option>
+								</select>
+							</div>
+                        </div>		
+                        
+                        <div class="form-group" id="output">
+                                <label>Amount: </label>
+                                <input id="toVal" type="text" class="form-control" placeholder="" disabled="disabled">
+                            </div>
+    
+                            <button id="convert" class="btn-primary btn-lg" type="submit" >Convert</button>
+                            <button id="clear" type="submit" class = "btn-primary btn-lg">Clear</button>
+                        </div>	
+      	
+				</div>
+			</div>	
+
+	  		
+	  	</div>	
+	</div>
+                      
+        </body>
+        </html>

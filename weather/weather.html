@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="skycons-master/skycons.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body id="body">
+
+    <!--navbar using bootstrap -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+              <!--Name and logo of my brand-->
+                <a class="navbar-brand"> 
+                  <span class="navbar-text"><b>Rishab's App </b></span> </a>
+         
+            <!--List of items in navbar-->
+            <ul class="navbar-nav">
+             
+              <li class="navbar-item">
+                  <a class="nav-link" href="index.html">Home</a>
+              </li>
+              
+              <li class="navbar-item">
+                <a class="nav-link" href="news.html">News Area</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a class="nav-link" href="weather/index.html">Weather</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a class="nav-link" href="currency.html">Currency</a>
+              </li>
+
+              <li class="navbar-item">
+                <a class="nav-link" href="#">Dictionary</a>
+              </li>
+      
+            </ul>
+            </div>
+          </nav>
+        
+    <h1 id="head" class="mt-5">Current Weather</h1>
+    <div class="outerContainer mt-5 ">
+        <div class="innerContainer1">
+            <h2 id="head2">Enter city</h2>
+            <input type="text" id="inputCity" style="width: 100%; text-align: center;font-size: 15px" placeholder="City name" >
+            <button class="btn btn-primary btn-block" id="btn1">submit</button>
+         
+        </div>
+        <div class="innerContainer2">
+            <div class="upperContainer">
+                    <canvas id="icon1" width="138" height="138"></canvas>
+
+            </div>
+            <hr>
+            <div class="lowerContainer">
+                <p id="temp">Temperature: </p>  
+                <p id="status">Status: </p> 
+                <p id="summary">Summary: </p>
+                <p id="windspeed">Wind Speed: </p>
+                <p id="visibility">Visibility: </p>
+                <p id="humidity">Humidity: </p>
+               
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

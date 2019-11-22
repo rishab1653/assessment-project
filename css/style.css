@@ -1,0 +1,108 @@
+html, body {
+	
+  width: 100% !important;
+  overflow-x: hidden !important;
+	
+}
+
+
+
+body {
+	background-color: #DFE2DB;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif !important; 
+}
+
+
+.jumbotron {
+	min-height: 100vh;
+	margin: 0 !important;
+	background-color: rgb(43, 47, 60) !important;
+	color: #fff !important;
+}
+
+button {
+	background-color: rgb(26, 188, 156) !important;
+	border-color: #fff !important;
+	
+}
+
+button:active {
+	outline: none !important;
+}
+
+
+
+.project h2 {
+	margin-bottom: 20px;
+}
+
+.project select {
+	margin: 10px 0 10px 0;
+}
+
+.project input {
+
+}
+
+.project {
+	margin-top: 20%;
+}
+
+#convert, #clear {
+	margin-top: 10px;
+	margin-right: 7px;
+}
+
+
+footer p {
+	
+	padding-top: 10px;
+	padding-bottom: 0px;
+	color: rgb(244, 244, 246);
+	font-size: 1em !important;
+}
+
+footer p:nth-child(2) {
+	margin-top: -20px;
+}
+
+footer ul {
+	
+	margin-left: -32px;
+    margin-top: -9px;
+}
+
+
+footer {
+	
+	background-color: #333333;
+	padding-top: 45px;
+  padding-bottom: 45px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+
+#navigation-footer  {
+  margin-top: 10px;
+}
+
+.navbar-inverse a { color: #fff !important; }
+
+.navbar-inverse a:hover { background: rgb(96, 115, 120) !important; }
+
+
+.navbar.navbar-inverse.custom {
+	background-color: #333333;
+	border-style: none;
+	opacity: 25%;
+	color: #fff;
+	margin-bottom: 0px;
+
+}
+
+
+
+
